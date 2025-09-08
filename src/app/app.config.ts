@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"fir-quickstart-fa0cb","appId":"1:251889982754:web:6b547f61427838034f997b","storageBucket":"fir-quickstart-fa0cb.firebasestorage.app","apiKey":"AIzaSyCc01LVT-hoKkkjI-iVReq5uWC9BmCRK_4","authDomain":"fir-quickstart-fa0cb.firebaseapp.com","messagingSenderId":"251889982754"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
